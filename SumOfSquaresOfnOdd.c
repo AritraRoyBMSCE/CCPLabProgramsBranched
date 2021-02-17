@@ -15,6 +15,7 @@ void sumofsquares(int a){
 float sum=0; int i=1;
     while(i<=a){
         if(i%2 != 0) {
+            printf("%d and %f \n", i,pow(i,2));
             sum=sum+pow(i,2);
         }
         i++;
