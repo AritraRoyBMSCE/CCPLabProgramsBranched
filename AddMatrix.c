@@ -50,6 +50,7 @@ int main()
     printf("Enter the second matrix \n");
     read_arr(m2, row, col);
     add_arr(m1, m2, m3, row, col);
+    printf("The sum of the 2 matrices is :- \n");
     print_arr(m3, row, col);
     getch();
     return 0;
