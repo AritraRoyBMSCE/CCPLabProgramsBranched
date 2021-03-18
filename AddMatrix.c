@@ -4,11 +4,11 @@
 void read_arr(int a[20][20], int row, int col)
 {
     int i, j;
-    for (i = 1; i <= row; i++)
+    for (i = 0; i < row; i++)
     {
-        for (j = 1; j <= col; j++)
+        for (j = 0; j < col; j++)
         {
-            printf("Enter the element %d%d : ", i, j);
+            printf("Enter the element %d%d : ", i+1, j+1);
             scanf("%d", &a[i][j]);
         }
     }
@@ -17,9 +17,9 @@ void read_arr(int a[20][20], int row, int col)
 void add_arr(int m1[20][20], int m2[20][20], int m3[20][20], int row, int col)
 {
     int i, j;
-    for (i = 1; i <= row; i++)
+    for (i = 0; i < row; i++)
     {
-        for (j = 1; j <= col; j++)
+        for (j = 0; j < col; j++)
         {
             m3[i][j] = (m1[i][j] + m2[i][j]);
         }
@@ -29,9 +29,9 @@ void add_arr(int m1[20][20], int m2[20][20], int m3[20][20], int row, int col)
 void print_arr(int m[20][20], int row, int col)
 {
     int i, j;
-    for (i = 1; i <= row; i++)
+    for (i = 0; i < row; i++)
     {
-        for (j = 1; j <= col; j++)
+        for (j = 0; j < col; j++)
         {
             printf("%d \t", m[i][j]);
         }
